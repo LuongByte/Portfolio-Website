@@ -1,0 +1,140 @@
+/*Header Start*/
+/*
+---------------------------------
+*/
+#navbar{
+    font-family: 'Oswald';
+    font-size: larger;
+    overflow: hidden;
+    background-color: hsl(0, 0%, 20%);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 70px;
+    padding-left: 3%;
+    gap: 40px;
+}
+
+#navbar a{
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 50px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: white;
+    white-space: nowrap;
+}
+
+#navbar a:hover{
+    background-color: hsl(0, 0%, 10%);
+}
+
+#logo{
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 5%;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    background-color: gray;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+}
+/*
+---------------------------------
+*/
+/*Header End*/
+
+
+#hobbySlider{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.slideButton{
+    margin: 10px;
+    height: 40px;
+    width: 80px;
+    cursor: pointer;
+}
+
+#profilePic{
+    float: right;
+    margin: 10px;
+}
+
+
+
+/*Footer Start*/
+/*
+---------------------------------
+*/
+
+footer{
+    background-color: gray;
+    padding: 0px 0px;
+    text-align: center;
+    bottom: 0;
+    text-align: center;
+    
+}
+
+#media{
+    padding: 1em;
+    margin-left: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#media div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    
+}
+
+.contact{
+    flex: 1 1 45%;
+    display: flex;
+    gap: 1rem;
+    width: 200px;
+    margin: 1px 10px;
+    position: relative;
+
+
+}
+
+.contact a{
+    color: black ;
+    font-size: large;
+    text-decoration: none;
+    padding-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contact *{
+    cursor: pointer;
+}
+
+footer h1{
+    padding-bottom: 1em;
+}
+
+i{
+    padding-right: 15px;
+}
+/*
+---------------------------------
+*/
+/*Footer End*/
