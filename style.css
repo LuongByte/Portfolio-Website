@@ -1,3 +1,23 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+} 
+
+.hShadow{
+    text-shadow: 1px 7px 7px gray;
+}
+
+main{
+    display: flex;
+    flex: 1;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
 /*Header Start*/
 /*
 ---------------------------------
@@ -138,3 +158,65 @@ i{
 ---------------------------------
 */
 /*Footer End*/
+
+
+
+/*Home Start*/
+/*
+---------------------------------
+*/
+#homeDesc{
+    font-family: 'Oswald';
+    font-size: larger;
+    margin: 10px 115px;
+    margin-right: 0px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    max-width: 600px;
+}
+
+#homeDesc *{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#resbutton{
+    font-size: 25px;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 10px 30px;
+}
+
+
+.imagebox{
+    float: right;
+    min-width: 500px;
+    min-height: 500px;
+    background-color: gray;
+    margin: 90px 115px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagebox img{
+    cursor: pointer;
+    width: 32rem;
+    height: 32rem;
+    left: 15px;
+    position: relative;
+    filter: drop-shadow(5px 5px 15px darkgray);
+}
+
+#box1{
+    display: none;
+}
+
+/*
+---------------------------------
+*/
+/*Home End*/
