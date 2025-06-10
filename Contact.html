@@ -14,32 +14,26 @@
 <body>
     <header>
         <div id="navbar">
-            <a href="">Home</a>
+            <a href="index.html">Home</a>
             <a href="About-Me.html">About Me</a>
             <a href="Projects.html">Projects</a>
-            <a href="Contact.html">Contact</a>
-            <b id="logo">LN</b>
+            <a href="">Contact</a>
+            <img src="favicon.png" id="logo">
         </div>
     </header>
 
     <main>
-        <div id="wrapper">
-            <div id="box1" class="imagebox"><img src="placeholder.png" class="expandable" alt="Image of Me"></div>
-        </div>
-        <div id="homeDesc">
-            <h2>Hello I am</h2>
-
-            <h1 class="hShadow">Luong Nguyen</h1>
-            
-            <h3>A Programmer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quae facilis et, eius magni recusandae perspiciatis doloribus quisquam est ad molestiae! A fuga, est quibusdam quidem at minus voluptates tempora.lor</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quae facilis et, eius magni recusandae perspiciatis doloribus quisquam est ad molestiae! A fuga, est quibusdam quidem at minus voluptates tempora.lor</p>
-            
-            <form method="get" action="Resume.pdf" target="_blank">
-                <button id="resbutton" title="Open Resume PDF">Download Resume</button>
+        <div id="contact-form">
+            <h1 class="hShadow">CONTACT ME</h1>
+            <h2>I'm always happy to talk!</h2>
+            <form method="POST" >
+                <input type="text" placeholder="Name" name="name" class="short-form" required><br>
+                <input type="email" placeholder="Email Address" name="email" class="short-form" required><br>
+                <input type="text" placeholder="Subject" name="" class="short-form" required><br>
+                <textarea class="long-form" placeholder="Message" required></textarea><br>
+                <button type="submit">Send Message</button>                
             </form>
         </div>
-        <div id="box2" class="imagebox"><img src="placeholder.png" class="expandable" alt="Image of Me"></div>
     </main>
     
     <footer>
