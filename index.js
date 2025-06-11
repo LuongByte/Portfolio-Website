@@ -5,8 +5,8 @@ let currSlide = 1;
 const maxSlide = 4;
 
 document.addEventListener("mousemove", (event) => {
-    mouseX = event.clientX;
-    mouseY = event.clientX;
+    mouseX = (event.clientX/window.innerWidth) * 100;
+    mouseY = (event.clientY/window.innerHeight) * 100;
 });
 
 
@@ -21,8 +21,9 @@ function copytoClip(text){
         const cpyTip = document.createElement("div");
         cpyTip.textContent = "Copied!";
         cpyTip.classList.add("copy-tooltip");
-        cpyTip.style.left = mouseX - 30 + "px";
-        cpyTip.style.top = mouseY + 280 + "px";
+        cpyTip.style.left = `${mouseX}%`;
+        cpyTip.style.top = `${mouseY + -5}%`;
+        cpyTip.style.transform = "translate(-50%, 0)";
         cpyTip.style.opacity = 1;
         document.body.append(cpyTip);
         setTimeout(() => {cpyTip.style.opacity = 0;
@@ -31,7 +32,6 @@ function copytoClip(text){
         }, 1500);
     }
 }
-
 
 // Max Image Functionality
 const overlay = document.getElementById("overlay");
