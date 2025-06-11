@@ -23,26 +23,29 @@
     </header>
 
     <main>
-        <div id="wrapper">
-            <div id="box1" class="imagebox"><img src="placeholder.png" class="expandable" alt="Image of Me"></div>
+        <button class="arrow-button" onclick="updateSlide('-')" title="Prev" style="left: 0;">←</button>
+        <button class="arrow-button" onclick="updateSlide('+')" title="Next" style="right: 0;">→</button>
+        <div id="slide-contain">
+            <div id="img-contain">
+                <img src="" class="expandable" alt="Image of my graduation">
+            </div>
+            <div id="text-contain">
+                <h1></h1>
+                <p></p>
+            </div>
         </div>
-        <div id="homeDesc">
-            <h2>Hello I am</h2>
+        <br>
 
-            <h1 class="hShadow">Luong Nguyen</h1>
-            
-            <h3>A Programmer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quae facilis et, eius magni recusandae perspiciatis doloribus quisquam est ad molestiae! A fuga, est quibusdam quidem at minus voluptates tempora.lor</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quae facilis et, eius magni recusandae perspiciatis doloribus quisquam est ad molestiae! A fuga, est quibusdam quidem at minus voluptates tempora.lor</p>
-            
-            <form method="get" action="Resume.pdf" target="_blank">
-                <button id="resbutton" title="Open Resume PDF">Download Resume</button>
-            </form>
-        </div>
-        <div id="box2" class="imagebox"><img src="placeholder.png" class="expandable" alt="Image of Me"></div>
+
+        
     </main>
     
     <footer>
+        <div id="projectSlider">
+            <button id="slide1" class="slide-button" onclick="updateSlide(1)"></button>
+            <button id="slide2" class="slide-button" onclick="updateSlide(2)"></button>
+            <button id="slide3" class="slide-button" onclick="updateSlide(3)"></button>
+        </div>
         <div id="media">
             <div>
                 <span class="contact">
