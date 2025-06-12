@@ -468,3 +468,212 @@ i{
 ---------------------------------
 */
 /*Contact End*/
+
+
+
+/*Size Modifications*/
+/*
+---------------------------------
+*/
+
+@media(max-width: 1200px){
+    #media{
+        margin-left: 23%;
+    }
+    #background h1{
+        margin-top: 80px;
+    }
+    #background p{
+        padding: 10px 50px;
+        margin: 10px 50px;
+    }
+    #background div{
+        margin: 5% 4%;
+    }
+    .sideIMG{
+        margin: 0px 10px;
+    }
+    #box1{
+        display: block;
+        float: right;
+        margin: 50px 50px;
+    }
+    #box2{
+        display: none;
+    }
+    main{
+        display: block;
+    }
+    #homeDesc{
+        margin: 10px 50px;
+    }
+    #img-contain img{
+        margin: 10px 0px;
+    }
+    #text-contain{
+        margin: 10px 0px;
+    }
+    #slide-contain{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .project-grid{
+        min-width: 100%;
+       
+        padding: 15px 0px;
+        grid-template-columns: repeat(2, 0fr);
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 1000px){
+    #navbar a{
+        padding: 50px 20px;
+    }
+    #contact-form .short-form{
+        width: 400px;
+    }
+    #contact-form .long-form{
+        width: 400px;
+    }
+    #imagebox{
+        margin: 50px 60px;
+    }
+    #background div{
+        margin: 5% 5%;
+    }
+}
+
+@media(max-width: 800px){
+    #media{
+        margin-left: 16%;
+    }
+    #navbar{
+        gap: 5px;
+    }
+    #navbar a{
+        
+        padding: 50px 12px;
+    }
+    #logo{
+        font-size: 20px;
+    }
+    #background div{
+        margin: 5% 6%;
+        float: none !important;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    #background div img{
+        transform: rotate(0deg) !important;
+    }
+    #background p{
+        margin: 0px;
+    }
+    #background h1{
+        margin-top: 1%;
+    }
+
+    #text-contain{
+        text-align: center;
+        width: 100%;
+    }
+
+    .project-grid{
+        min-width: 100%;
+        gap: 60px;
+        padding: 15px 0px;
+        grid-template-columns: repeat(1, 0fr);
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 600px){
+    .imagebox{
+        margin: 10px 5px;
+        display: block;
+        float: none;
+    }
+    
+    #background div{
+        margin: 5% 7%;
+    }
+
+    #box1{
+        display: block;
+        float: none;
+        margin: 50px 0px;
+    }
+
+    #wrapper{
+        overflow: scroll;
+    }
+
+}
+
+@media(max-width: 450px){
+    #imagebox{
+        max-width: 500px;
+        max-height: 500px;
+        width: 100%;
+        height: auto;
+        margin: 5% 0px;
+        overflow: hidden;
+    }
+    #homeDesc{
+        text-align: center;
+        margin: 1% 1%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    #navbar{
+        padding-left: 0%;
+    }
+    #navbar a{
+        padding: 50px 8px;
+        font-size: 0.75em;
+    }
+    #contact-form .short-form{
+        
+        width: 250px;
+    }
+    #contact-form .long-form{
+        width: 250px;
+    }
+    #logo{
+        margin-right: 5%;
+    }
+    #media{
+        margin-left: 1%;
+    }
+    .contact a{
+        font-size: medium;
+    }  
+    #background div{
+        margin: 5% 0%;
+    }
+    #background div img{
+        overflow: auto;
+    }
+
+    .project-grid{
+        margin: 0px;
+        margin-right: 100px;
+        gap: 0px;
+        padding: 0px;
+        grid-template-columns: repeat(1, 1fr);
+        overflow: scroll;
+    }
+
+    .project{
+        margin: 25px 2px;
+    }
+    #project-contain{
+        padding: 0px;
+        margin: 0px;
+    }
+}
