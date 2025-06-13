@@ -121,7 +121,7 @@ class Slide extends Container{
         const oldBut = document.getElementById(`slide${old}`);
         if(oldBut != null)
             oldBut.classList.remove("active-button");
-        const texts = await this.fetchText("slides/test.txt");
+        const texts = await this.fetchText("slides/text.txt");
         const para = this.container.querySelector("p");
         const header = this.container.querySelector("h1");
         const imgs = this.container.querySelectorAll("img");
@@ -201,5 +201,4 @@ class Projects extends Container{
 
 if(document.getElementById("project-contain") != null){
     const projects = new Projects(document.querySelector(".project-grid"))
-  //  document.addEventListener("DOMContentLoaded", loadProjects(document.querySelector(".project")))
 }

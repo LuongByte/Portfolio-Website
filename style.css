@@ -191,8 +191,9 @@ i{
 */
 #homeDesc{
     font-family: 'Oswald';
-    font-size: larger;
-    margin: 10px 115px;
+    font-size: 22px;
+    margin: 50px 115px;
+    margin-top: 75px;
     margin-right: 0px;
     padding-top: 70px;
     padding-bottom: 70px;
@@ -220,6 +221,8 @@ i{
     background-color: gray;
     margin: 90px 115px;
     border-radius: 50%;
+    border-width: 2px;
+    border-style: solid;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -257,17 +260,6 @@ i{
     align-items: center;
 }
 
-/*
-#img-contain{
-    position: relative;
-    transform-origin: center center;
-    float: left;
-    width: 500px;
-    height: 320px;
-    margin: 10% 10%;
-    margin-right: 15%;
-}   */
-
 #img-contain img{
     border-width: 5px;
     border-style: solid;
@@ -280,21 +272,24 @@ i{
 }
 
 #text-contain{
-    margin: 1% 5%;
+    margin: 0% 5%;
     width: 700px;
-
 }
 
 #text-contain p{
+    font-family: Arial;
     font-size: 30px;
     height: 350px;
+    margin: 25px 0px;
 }
 
 #text-contain h1{
+    font-family: "Oswald";
+    margin-top: 80px;
+    margin-bottom: 0px;
     font-size: 50px;
 }
     
-
 #projectSlider{
     background-color: white;
     position: relative;
@@ -305,7 +300,6 @@ i{
 .slide-button{
     background-color: hsl(0, 0%, 55%);
     margin: 10px 10px;
-
     width: 1em;
     height: 1em;
     border-radius: 50%;
@@ -328,7 +322,7 @@ i{
     height: 60px;
     width: 30px;
     margin: 0px 15px;
-    top: 45%;
+    top: 47%;
     position: fixed;
     cursor: pointer;
     z-index: 9997;
@@ -526,6 +520,9 @@ i{
         align-items: center;
         justify-content: center;
     }
+    .arrow-button{
+        top: 45%;
+    }
 }
 
 @media(max-width: 1000px){
@@ -543,6 +540,10 @@ i{
     }
     #background div{
         margin: 5% 5%;
+    }
+
+    .arrow-button{
+        top: 42%;
     }
 }
 
@@ -590,6 +591,10 @@ i{
         align-items: center;
         justify-content: center;
     }
+
+    .arrow-button{
+        top: 40%;
+    }
 }
 
 @media(max-width: 600px){
@@ -612,7 +617,9 @@ i{
     #wrapper{
         overflow: scroll;
     }
-
+    .arrow-button{
+        top: 38%;
+    }
 }
 
 @media(max-width: 450px){
@@ -675,5 +682,8 @@ i{
     #project-contain{
         padding: 0px;
         margin: 0px;
+    }
+    .arrow-button{
+        top: 32%;
     }
 }
