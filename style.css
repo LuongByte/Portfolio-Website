@@ -71,7 +71,7 @@ main{
     font-family: 'Oswald';
     font-size: larger;
     overflow: hidden;
-    background-color: hsl(0, 0%, 20%);
+    background-color: hsl(0, 0%, 25%);
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -93,16 +93,23 @@ main{
 }
 
 #navbar a:hover{
-    background-color: hsl(0, 0%, 10%);
+    background-color: hsl(0, 0%, 15%);
 }
 
+.active-page{
+    background-color: hsl(0, 0%, 10%);
+
+    cursor:default !important;
+}
+
+.active-page:hover{
+    background-color: hsl(0, 0%, 10%) !important;
+}
 
 #logo{
     cursor: pointer;
     margin-left: auto;
     margin-right: 5%;
-    text-align: center;
-    justify-content: center;
     color: white;
     width: auto;
     height: 45px;
@@ -551,9 +558,7 @@ i{
     #media{
         margin-left: 16%;
     }
-    #navbar{
-        gap: 5px;
-    }
+
     #navbar a{
         
         padding: 50px 12px;
@@ -652,7 +657,7 @@ i{
         width: 250px;
     }
     #logo{
-        margin-right: 5%;
+        margin-right: 3.5%;
     }
     #media{
         margin-left: 1%;

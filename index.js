@@ -10,6 +10,10 @@ document.addEventListener("mousemove", (event) => {
 });
 
 
+document.getElementById("logo").addEventListener("click", () => {
+    window.location.href = "index.html";
+})
+
 //Copy to Clipboard Functionality
 phoneNumber = document.getElementById("phonenumber");
 phoneNumber.addEventListener("click", (event) => {copytoClip(event.currentTarget.textContent)});
@@ -173,8 +177,10 @@ class Projects extends Container{
             newProj.classList.add("project");
             const line = texts[index - 1].split(';');
             this.fillProject(newProj, index, line);
-            if(line[2].length == 0)
+            if(line[2].length == 0){
                 newProj.title = "Unavailable";
+                newProj.style.cursor = "default";
+            }
             else{
                 newProj.title = "Go To Project";
                 newProj.href = line[2];
