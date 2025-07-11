@@ -284,15 +284,17 @@ i{
 }
 
 #text-contain p{
-    font-family: Arial;
+    font-family: "Roboto";
+    font-weight: 300;
     font-size: 30px;
     height: 350px;
-    margin: 25px 0px;
+    margin: 10px 0px;
+   
 }
 
 #text-contain h1{
     font-family: "Oswald";
-    margin-top: 80px;
+    margin-top: 70px;
     margin-bottom: 0px;
     font-size: 50px;
 }
@@ -433,7 +435,8 @@ i{
 }
 
 #contact-form h2{
-
+    font-family: 'Roboto';
+    font-weight: 400;
     margin: 20px;
     margin-top: 2px;
 }
