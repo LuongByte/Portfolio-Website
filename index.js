@@ -167,7 +167,6 @@ class Projects extends Container{
     }
 
     async loadProjects(){
-        let line = "";
         let index = 1;
         const texts = await this.fetchText("projects/descriptions.txt");
 
