@@ -182,8 +182,15 @@ class Projects extends Container{
             }
             else{
                 newProj.title = "Go To Project";
-                newProj.href = line[2];
+                try{
+                    const url = new URL(line[2]);
+                    if(url.protocol === "http:" || url.protocol === "https:")
+                        newProj.href = url.href;
+                }catch{
+                    newProj.removeAttribute("href");
+                }
                 newProj.target = "_blank";
+                newProj.rel = "noopener noreferrer";
             }
             this.container.append(newProj);
             index++;
